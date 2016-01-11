@@ -5,4 +5,6 @@ all: $(CONTIKI_PROJECT)
 
 CONTIKI = ./contiki
 
+TARGETDIRS += targets
+
 include $(CONTIKI)/Makefile.include
