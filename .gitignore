@@ -1,0 +1,5 @@
+Makefile.target
+example.co
+example.hex
+symbols.*
+*avr-atmega128rfa1-custom*
