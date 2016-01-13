@@ -8,4 +8,8 @@ CONTIKI = ./contiki
 
 TARGETDIRS += targets
 
+APPDIRS += ${addprefix ../apps/, $(APPS)}
+
+APPS = myApp
+
 include $(CONTIKI)/Makefile.include
