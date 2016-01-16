@@ -61,11 +61,11 @@ extern uint8_t rng_get_uint8(void);
 static void
 generate_new_eui64(uint8_t eui64[8]) {
   eui64[0] = 0x02;
-  eui64[1] = rng_get_uint8();
-  eui64[2] = rng_get_uint8();
+  eui64[1] = 0xCC;
+  eui64[2] = 0xDD;
   eui64[3] = 0xFF;
   eui64[4] = 0xFE;
-  eui64[5] = rng_get_uint8();
+  eui64[5] = 0xEE;
   eui64[6] = rng_get_uint8();
   eui64[7] = rng_get_uint8();
 }

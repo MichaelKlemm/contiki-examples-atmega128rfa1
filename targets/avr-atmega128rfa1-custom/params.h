@@ -12,7 +12,7 @@
  *
  * Note the parameters in this file can be changed without forcing a complete rebuild.
  */
-#define CONTIKI_CONF_RANDOM_MAC 0        //adds 78 bytes
+#define CONTIKI_CONF_RANDOM_MAC 1        //adds 78 bytes
 #define CONTIKI_CONF_SETTINGS_MANAGER 0  //adds 1696 bytes
 
 #if CONTIKI_CONF_SETTINGS_MANAGER
