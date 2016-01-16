@@ -1,8 +1,11 @@
 CONTIKI_PROJECT = example
-all: $(CONTIKI_PROJECT)
+all: rime-broadcast.hex 
+#udp-server.hex udp-client.hex
 
-DEFINES = WITH_NODE_ID=1,CONTIKI_CONF_RANDOM_MAC=1
+DEFINES = CONTIKI_CONF_RANDOM_MAC=1
 #UIP_CONF_IPV6=1
+#CONTIKI_WITH_IPV6 = 1
+CONTIKI_WITH_RIME = 1
 
 CONTIKI = ./contiki
 
