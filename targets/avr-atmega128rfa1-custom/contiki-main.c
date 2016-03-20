@@ -182,7 +182,7 @@ void initialize(void)
   rs232_set_input(0,raven_lcd_serial_input);
 #else
   /* Generic or slip connection on uart0 */
-  rs232_init(RS232_PORT_0, USART_BAUD_38400,USART_PARITY_NONE | USART_STOP_BITS_1 | USART_DATA_BITS_8);
+  rs232_init(RS232_PORT_0, USART_BAUD_115200,USART_PARITY_NONE | USART_STOP_BITS_1 | USART_DATA_BITS_8);
 #endif
 #endif
 
