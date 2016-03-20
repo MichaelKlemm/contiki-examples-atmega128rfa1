@@ -8,6 +8,11 @@ CONTIKI_PROJECT = IoT
 CONTIKI_WITH_RPL = 0
 CONTIKI_WITH_IPV6 = 1
 
+#### USE THIS FOR SLIP-RADIO ONLY ####
+CFLAGS += -DPROJECT_CONF_H=\"project-conf.h\"
+PROJECT_SOURCEFILES += slip-net.c no-framer.c
+APPS = slip-cmd
+
 # Contiki repository itself
 CONTIKI = ./contiki
 
@@ -16,3 +21,4 @@ TARGETDIRS += targets
 
 # Include the contiki Makefile
 include $(CONTIKI)/Makefile.include
+
