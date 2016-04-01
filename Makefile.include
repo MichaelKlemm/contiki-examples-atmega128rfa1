@@ -1,0 +1,16 @@
+ifndef PROJECT_ROOT
+    PROJECT_ROOT = ./
+endif
+
+# Contiki repository itself
+CONTIKI = $(PROJECT_ROOT)/contiki
+
+# Our self defined targets
+TARGETDIRS += $(PROJECT_ROOT)/targets
+
+# Our self defined apps
+APPDIRS += $(PROJECT_ROOT)/apps
+
+# Include the contiki Makefile
+include $(CONTIKI)/Makefile.include
+

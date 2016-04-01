@@ -3,3 +3,4 @@ Makefile.target
 *.hex
 symbols.*
 *avr-atmega128rfa1-custom*
+obj_*
