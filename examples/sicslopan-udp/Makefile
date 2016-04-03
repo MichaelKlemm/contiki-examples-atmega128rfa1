@@ -1,6 +1,6 @@
-CONTIKI_PROJECT = Hello-World
+CONTIKI_PROJECT = UDP-Example
 
-all: hello-world.hex
+all: udp-client.hex udp-server.hex
 
 # Root of the project repository
 PROJECT_ROOT = ../../
