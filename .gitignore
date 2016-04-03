@@ -4,3 +4,5 @@ Makefile.target
 symbols.*
 *avr-atmega128rfa1-custom*
 obj_*
+*.err
+*.log
