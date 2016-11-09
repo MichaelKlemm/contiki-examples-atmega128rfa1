@@ -1,5 +1,6 @@
 CONTIKI_PROJECT = Broadcast6
 
+MODULES += core/net/ipv6/multicast core/net/ipv6
 CONTIKI_WITH_RPL = 1
 CONTIKI_WITH_IPV6 = 1
 CFLAGS += -DPROJECT_CONF_H=\"project-conf.h\"
