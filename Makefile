@@ -1,6 +1,10 @@
 
 EXAMPLE_DIR = ./examples
 
+# MySmartUSB light (AVR Programmer)
+AVRDUDE_PROGRAMMER := stk500v2
+AVRDUDE_PORT :=/dev/ttyUSBmySmartUSB
+
 BUILD_EXAMPLES := $(sort $(dir $(wildcard $(EXAMPLE_DIR)/*/ )))
 CLEAN_EXAMPLES := $(addsuffix .clean,$(BUILD_EXAMPLES))
 

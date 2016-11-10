@@ -1,8 +1,8 @@
-Makefile.target
 *.co
 *.hex
 symbols.*
-*avr-atmega128rfa1-custom*
+*avr-atmega128rfa1*
 obj_*
 *.err
 *.log
+*.out
